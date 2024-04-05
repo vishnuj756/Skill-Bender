@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+.color-theme a{
+text-decoration: none;
+font-size: large;
+color: white;
+}
+.color-theme-orange{
+    color: #FB641B;
+}
+.bg-img{
+background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+  font-family: "Reddit Mono", monospace;
+
+}
+
