@@ -11,9 +11,9 @@ function Header() {
     <>
       {['lg'].map((expand) => (
 
-        <Navbar key={expand} expand={expand} className="bg-secondary">
+        <Navbar key={expand} expand={expand} className="color-theme-blue">
           <Container fluid className='fw-bold'>
-            <Navbar.Brand href="#" className='text-uppercase text-white'> <img src='/images/logo.png' alt="" style={{ width: "50px" }} className='me-2' />Skill Bender</Navbar.Brand>
+            <Navbar.Brand href="#" className='text-uppercase '> <img src='/images/bg/logo.png' alt="" style={{ width: "70px" }} className='fs-2 text-dark' />Skill Bender</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -28,18 +28,19 @@ function Header() {
               <Offcanvas.Body >
                 <div className='d-flex w-100 align-items-center flex-sm-column flex-lg-row'>
                   <Nav className=" d-flex pe-3 color-theme w-100 justify-content-start ">
-
-                    <NavLink href="#action1" className='mx-2 color-theme-blue'>Home</NavLink>
-                    <NavLink href="#action2" className='mx-2'>Learning</NavLink>
-                    <NavLink href="#action2" className='mx-2'>Earning</NavLink>
-                    <NavLink href="#action2" className='mx-2'>About us</NavLink>
-                    <NavLink href="#action2" className='ms-2'>Contact us</NavLink>
+                
+                  <NavLink to='/' className='mx-2 '>Home</NavLink>
+                    <NavLink to='/learn' className='mx-2'>Learning</NavLink>
+                    <NavLink to='/earn' className='mx-2'>Earning</NavLink>
+                    <NavLink to='/about' className='mx-2'>About us</NavLink>
+                    <NavLink to='/contact' className='ms-2'>Contact us</NavLink>
+                    
 
                   </Nav>
                   <Nav className='p-2 flex-shrink-1 align-self-start'>
-                    <NavLink to="/login" className=" text-decoration-none me-4"><LockOpenIcon  className='color-theme-orange' fontSize='large'/></NavLink>
+                    <NavLink to="/login" className=" text-decoration-none me-4"><LockOpenIcon  className='text-color' fontSize='large'/></NavLink>
                     <Dropdown >
-                      <Dropdown.Toggle className='px-4 border-0 ' style={{ background: "#FB641B" }}>
+                      <Dropdown.Toggle className='px-4 border-0 bg-color ' >
                         <NavLink to="/Sign_up" className="text-decoration-none text-white text-uppercase">signup</NavLink>
                       </Dropdown.Toggle>
                     </Dropdown>
